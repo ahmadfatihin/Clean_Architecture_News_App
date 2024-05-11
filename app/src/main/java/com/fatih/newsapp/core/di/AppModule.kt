@@ -2,6 +2,7 @@ package com.fatih.newsapp.core.di
 
 import com.fatih.newsapp.core.di.Env.API_KEY
 import com.fatih.newsapp.core.di.Env.BASE_URL
+import com.fatih.newsapp.features.news.data.remote.NewsApi
 
 import dagger.Module
 import dagger.Provides
@@ -12,6 +13,7 @@ import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import javax.inject.Singleton
 
 
 @InstallIn(SingletonComponent::class)
@@ -36,6 +38,16 @@ object AppModule {
         .addInterceptor(loggingInterceptor)
         .addInterceptor { setUpApiKey(it) }
         .build()
+    @Provides
+    @Singleton
+    fun NewsApiHttpService() : NewsApi {
+        return Retrofit.Builder()
+            .baseUrl(BASE_URL)
+            .addConverterFactory(GsonConverterFactory.create())
+            .client(client)
+            .build()
+            .create(NewsApi::class.java)
+    }
 
 
 

@@ -1,4 +1,4 @@
-package com.pbi.newsapp.domain.model.request
+package com.fatih.newsapp.features.news.domain.entity.request
 
 data class EverythingEndpointParam(
     val q: String? = null,

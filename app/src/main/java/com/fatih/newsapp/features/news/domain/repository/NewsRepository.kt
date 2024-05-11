@@ -1,4 +1,4 @@
-package com.fatih.newsapp.features.news.domain.entity.repository
+package com.fatih.newsapp.features.news.domain.repository
 
 import arrow.core.Either
 import com.fatih.newsapp.core.exception.NetworkError

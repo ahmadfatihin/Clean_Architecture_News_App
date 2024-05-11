@@ -5,7 +5,7 @@ import com.fatih.newsapp.core.exception.NetworkError
 import com.fatih.newsapp.core.exception.toNetworkError
 import com.fatih.newsapp.features.news.data.remote.NewsApi
 import com.fatih.newsapp.features.news.domain.entity.News
-import com.fatih.newsapp.features.news.domain.entity.repository.NewsRepository
+import com.fatih.newsapp.features.news.domain.repository.NewsRepository
 import javax.inject.Inject
 
 class NewsRepositoryImpl @Inject constructor (
