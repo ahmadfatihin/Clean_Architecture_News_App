@@ -1,4 +1,4 @@
-package com.fatih.newsapp.ui.theme
+package com.fatih.newsapp.core.theme
 
 import android.app.Activity
 import android.os.Build
