@@ -1,4 +1,4 @@
-package com.fatih.newsapp.features.domain.entity
+package com.fatih.newsapp.core.exception
 
 data class NetworkError(
     val error: ApiError,
