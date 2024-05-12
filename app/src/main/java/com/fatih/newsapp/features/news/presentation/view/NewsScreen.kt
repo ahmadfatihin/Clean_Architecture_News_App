@@ -15,4 +15,11 @@ internal fun NewsScreen(
     val headlinesPagingData = viewModel.headlinesPaging.collectAsLazyPagingItems()
     val state by viewModel.state.collectAsStateWithLifecycle()
 
+    NewsContent(
+        everythingPagingData,
+        headlinesPagingData,
+        state,
+        { viewModel.toNews() },
+        { viewModel.toHeadlines() },
+    )
 }
