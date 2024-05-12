@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.jetbrains.kotlin.android)
 
     kotlin("kapt")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -66,10 +67,10 @@ dependencies {
     implementation(libs.coil.compose)
 
     // Hilt dependency
-    implementation("com.google.dagger:hilt-android:2.50")
-    implementation("androidx.hilt:hilt-navigation-compose:1.1.0")
+    implementation(libs.hilt.android)
+    implementation(libs.androidx.hilt.navigation.compose)
     implementation(libs.androidx.lifecycle.runtime.compose)
-    kapt("com.google.dagger:hilt-android-compiler:2.50")
+    kapt(libs.hilt.android.compiler)
 
 
     // Arrow.kt dependency
