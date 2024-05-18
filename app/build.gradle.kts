@@ -63,7 +63,7 @@ dependencies {
     implementation(libs.androidx.paging.runtime.ktx)
     implementation(libs.androidx.paging.compose)
 
-    //Coil dependency
+    //Coil dependency - Cached Image Network
     implementation(libs.coil.compose)
 
     // Hilt dependency

@@ -34,7 +34,7 @@ fun NewsImage(
             .height(200.dp)
             .fillMaxWidth()
             .padding(
-                vertical = dimensionResource(id = Dimensions.vertical_padding)
+                vertical = dimensionResource(id = R.dimen.vertical_padding)
             )
             .clip(MaterialTheme.shapes.large),
         contentAlignment = Alignment.Center,
@@ -75,7 +75,7 @@ fun NewsTitle(
         style = MaterialTheme.typography.titleMedium,
         modifier = modifier
             .padding(
-                vertical = dimensionResource(id = Dimensions.vertical_padding))
+                vertical = dimensionResource(id = R.dimen.vertical_padding))
     )
 }
 
@@ -93,6 +93,6 @@ fun NewsDescription(
             overflow = TextOverflow.Ellipsis,
             modifier = modifier
                 .padding(
-                    vertical = dimensionResource(id = Dimensions.vertical_padding))
+                    vertical = dimensionResource(id = R.dimen.vertical_padding))
         )
 }

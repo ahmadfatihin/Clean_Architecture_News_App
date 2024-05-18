@@ -7,6 +7,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.dimensionResource
+import com.fatih.newsapp.R
 import com.fatih.newsapp.core.ui.Dimensions
 import com.fatih.newsapp.features.news.domain.entity.Article
 
@@ -18,13 +19,13 @@ fun NewsDetails(
     Card(
         shape = MaterialTheme.shapes.medium,
         modifier = modifier
-            .padding(dimensionResource(Dimensions.medium_padding))
+            .padding(dimensionResource(R.dimen.medium_padding))
     ) {
         Column(
             modifier = Modifier
                 .padding(
-                    vertical = dimensionResource(id = Dimensions.vertical_padding),
-                    horizontal = dimensionResource(id = Dimensions.horizontal_padding)
+                    vertical = dimensionResource(id = R.dimen.vertical_padding),
+                    horizontal = dimensionResource(id = R.dimen.horizontal_padding)
                 )
         ) {
             NewsHeader(

@@ -9,7 +9,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.dimensionResource
 import androidx.paging.compose.LazyPagingItems
-import com.fatih.newsapp.core.ui.Dimensions
+import com.fatih.newsapp.R
 import com.fatih.newsapp.core.utils.Endpoint
 import com.fatih.newsapp.features.news.domain.entity.Article
 import com.fatih.newsapp.features.news.presentation.viewmodel.NewsViewState
@@ -32,10 +32,10 @@ fun NewsContent(
             BottomAppBar(
                 modifier = modifier
                     .height(
-                        dimensionResource(id = Dimensions.bottom_app_bar_height)
+                        dimensionResource(id = R.dimen.bottom_app_bar_height)
                     )
                     .padding(
-                        dimensionResource(id = Dimensions.bottom_app_bar_padding)
+                        dimensionResource(id = R.dimen.bottom_app_bar_padding)
                     )
                 ,
                 actions = {

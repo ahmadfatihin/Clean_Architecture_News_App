@@ -10,6 +10,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.dimensionResource
+import com.fatih.newsapp.R
 import com.fatih.newsapp.core.ui.Dimensions
 
 @Composable
@@ -23,7 +24,7 @@ fun NewsFooter(
         modifier = modifier
             .fillMaxWidth()
             .padding(
-                vertical = dimensionResource(id = Dimensions.vertical_padding)
+                vertical = dimensionResource(id = R.dimen.vertical_padding)
             )
     ) {
         Text(

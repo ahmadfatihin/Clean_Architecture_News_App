@@ -9,7 +9,7 @@ import androidx.compose.runtime.key
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.dimensionResource
 import androidx.paging.compose.LazyPagingItems
-import com.fatih.newsapp.core.ui.Dimensions
+import com.fatih.newsapp.R
 import com.fatih.newsapp.features.news.domain.entity.Article
 
 @Composable
@@ -28,7 +28,7 @@ fun ArticleLazyColumn(
 
                 Spacer(
                     modifier = Modifier.padding(
-                        dimensionResource(id = Dimensions.all_padding)
+                        dimensionResource(id = R.dimen.all_padding)
                     )
                 )
             }

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="vertical_padding">5dp</dimen>
+    <dimen name="horizontal_padding">10dp</dimen>
+    <dimen name="all_padding">5dp</dimen>
+
+    <dimen name="bottom_app_bar_height">50dp</dimen>
+    <dimen name="bottom_app_bar_padding">0dp</dimen>
+
+    <dimen name="header_icon_padding">3dp</dimen>
+    <dimen name="header_icon_size">40dp</dimen>
+    <dimen name="header_spacer_padding">3dp</dimen>
+
+    <dimen name="content_image_width">300dp</dimen>
+    <dimen name="content_image_height">200dp</dimen>
+
+    <dimen name="icon_button_size">25dp</dimen>
+
+    <dimen name="medium_padding">8dp</dimen>
+</resources>

@@ -10,6 +10,7 @@ import androidx.compose.ui.focus.focusRequester
 import androidx.compose.ui.focus.focusTarget
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
+import com.fatih.newsapp.R
 import com.fatih.newsapp.core.ui.Dimensions
 
 @Composable
@@ -31,7 +32,7 @@ fun BottomBarButton(
             contentDescription = null,
             modifier = Modifier
                 .size(
-                    dimensionResource(id = Dimensions.icon_button_size)
+                    dimensionResource(id = R.dimen.icon_button_size)
                 )
         )
     }

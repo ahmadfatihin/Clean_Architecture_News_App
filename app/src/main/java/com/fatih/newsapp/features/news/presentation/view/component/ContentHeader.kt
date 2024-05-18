@@ -16,6 +16,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.text.style.TextOverflow
+import com.fatih.newsapp.R
 import com.fatih.newsapp.core.ui.Dimensions
 
 
@@ -31,7 +32,7 @@ fun NewsHeader(
         verticalAlignment = Alignment.CenterVertically,
         modifier = modifier
             .padding(
-                vertical = dimensionResource(id = Dimensions.vertical_padding)
+                vertical = dimensionResource(id = R.dimen.vertical_padding)
             ),
     ) {
         Icon(
@@ -39,10 +40,10 @@ fun NewsHeader(
             contentDescription = null,
             modifier = Modifier
                 .size(
-                    dimensionResource(id = Dimensions.header_icon_size)
+                    dimensionResource(id = R.dimen.header_icon_size)
                 )
                 .padding(
-                    end = dimensionResource(id = Dimensions.header_icon_padding)
+                    end = dimensionResource(id = R.dimen.header_icon_padding)
                 )
         )
 
@@ -60,7 +61,7 @@ fun NewsHeader(
             Spacer(
                 modifier = Modifier
                     .padding(
-                        vertical = dimensionResource(id = Dimensions.header_spacer_padding))
+                        vertical = dimensionResource(id = R.dimen.header_spacer_padding))
             )
 
             Text(
